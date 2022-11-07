@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.gdgdocs.org/css?family=Lobster" rel="stylesheet" type="text/css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 class="main-title">Список покупок</h1>
+    <div class="popup">
+        <input type="text" class="input-balance" placeholder="Введите ваш баланс">
+        <button class="main-btn">Добавить</button>
+    </div>
+    <div class="wrapper">
+        <div class="purchases">
+            <h2 class="add-product">Введите товар:</h2>
+            <input type="text" name="productName" class="product" placeholder="Введите название товара">
+            <h2 class="add-cost">Введите стоимость:</h2>
+            <input type="text" name="cost" class="cost" placeholder="Введите стоимость товара">
+            <button class="add-btn">Добавить</button>
+        </div>
+        <div class="counter">
+            <div class="your-balance">
+                <h2 class="your-balance__title">Ваш бютжет:<span id="your-balance"></span>$</h2>
+            </div>
+            <div class="left-balance">
+                <h2 class="left-balance__title">Осталось:<span id="left-balance"></span>$</h2>
+            </div>
+        </div>
+    </div>
+    <div id="error">Вы израсходовали весь ваш бютжет<span>&#128549</span></div>
+    <div class="purchases-list">
+        <h2 class="purchases-list__title">Вы купили:</h2>
+        <ul class="purchases-list__item">
+
+        </ul>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
